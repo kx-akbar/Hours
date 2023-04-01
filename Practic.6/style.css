@@ -1,0 +1,227 @@
+/* Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tun{
+  background: black;
+  color: #fff;
+}
+
+.brd{
+  border: 2px solid blue;
+}
+
+.spn{
+  border: 5px solid #fff;
+  background-color: red;
+}
+
+.kun{
+  background: none;
+  border: 1.9px solid #fff;
+}
+
+.kun-tun{
+  border: 1.3px solid #fff;
+}
+
+.nur{
+  color: #fff;
+}
+
+.boxing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  border: none;
+  text-align: center;
+  padding: 0 8px 0 0;
+}
+
+.hours {
+  width: 5px;
+  height: 100px;
+  background-color: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  margin: 50px 0 0 5px;
+}
+
+.span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid red;
+  background-color: black;
+  z-index: 40;
+  position: relative;
+  top: 46.6%;
+  left: 17px;
+}
+
+.minute {
+  width: 5px;
+  height: 120px;
+  background-color: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+  z-index: 15;
+  margin: 30px 0 0 -5px;
+  user-select: none;
+}
+
+.second {
+  width: 5px;
+  height: 140px;
+  background-color: red;
+  border-radius: 10px;
+  transform-origin: bottom;
+  margin: 10px 0 0 -5px;
+}
+
+.hourss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 32px;
+  user-select: none;
+}
+
+.spl{
+  font-size: 37px;
+  margin-top: -6px;
+}
+
+.clockk {
+  font-size: 32px;
+  margin-right: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.clockk ~ div {
+  font-size: 32px;
+  margin-left: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.pm {
+  font-size: 32px;
+  margin-left: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+.btn{
+  text-align: center;
+  width: 110px;
+  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border: 1px solid black;
+  height: 40px;
+  font-size: 24px;
+  padding: 5px 20px;
+  margin-bottom: 40px;
+  margin-top: -40px;
+  border-radius: 7px;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1400px){
+  .clock{
+    width: 280px;
+    height: 300px;
+    margin: 10px 0 0 0;
+  }
+  .btn{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 567px){
+  .clock{
+    width: 270px;
+    height: 270px;
+    margin: -20px 0 0 10px;
+    padding: 0;
+  }
+  .btn{
+    width: 90px;
+    height: 30px;
+    font-size: 17px;
+    padding: 0;
+    margin: 10px 0 10px 0;
+  }
+
+  .hours {
+    width: 5px;
+    height: 80px;
+    margin: 68px 0 0 5px;
+  }
+  
+  .span {
+    width: 17px;
+    height: 17px;
+    border: 3px solid red;
+    z-index: 40;
+    top: 51.6%;
+    left: 14px;
+  }
+  
+  .minute {
+    width: 5px;
+    height: 90px;
+    z-index: 15;
+    margin: 59px 0 0 -5px;
+  }
+  
+  .second {
+    width: 5px;
+    height: 110px;
+    margin: 37px 0 0 -5px;
+    z-index: 20;
+  }
+
+  .hourss {
+    margin-left: -1px;
+    margin-top: 20px;
+  }
+
+  .spl{
+    font-size: 22px;
+    margin-top: -3px;
+  }
+  
+  .clockk {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  .clockk ~ div {
+    font-size: 24px;
+    margin-left: 5px;
+  }
+}
